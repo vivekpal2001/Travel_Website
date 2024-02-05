@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        *{
+            background-color: #CBBEB5;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        h1{
+            position: relative;
+            top: 100px;
+            background: none;
+            text-align: center;
+            margin: 40px;
+            padding: 30px;
+            font-family: fantasy;
+        }
+
+        .booking-container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 100px;
+            border-radius: 5px;
+        }
+
+        .hotel-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .booking-form {
+            margin-top: 20px;
+            background: none;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            background: none;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: none;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            
+            <img src="css/tree-removebg-preview.png" alt="">
+            <h2 style="align-self: center;background:none; color:white ">Ranchi Tourism</h2>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Heritage.html">Heritage</a>
+            <a href="Hotel.html">Hotel Booking</a>
+            <a href="Gallery.html">Gallery</a>
+            
+        </nav>
+    </header>
+    <h1>Hotel Booking</h1>
+
+    <div class="booking-container">
+        <img src="css/hotel.jpeg" alt="Hotel Image" class="hotel-image">
+
+        <div class="booking-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"placeholder="Enter Email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"placeholder="Enter phone no." required>
+
+            <label for="check-in">Check-In Date:</label>
+            <input type="date" id="check-in" name="check-in" required>
+
+            <label for="check-out">Check-Out Date:</label>
+            <input type="date" id="check-out" name="check-out" required>
+
+            <label for="rooms">Number of Rooms:</label>
+            <select id="rooms" name="rooms" required>
+                <option value="1">1 Room</option>
+                <option value="2">2 Rooms</option>
+                <option value="3">3 Rooms</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <button type="submit">Book Now</button>
+        </div>
+    </div>
+    <footer>
+        <div class="logo">
+            
+            <img src="css/tree-removebg-preview.png" alt="">
+            <h2 style="align-self: center;background:none; color:white ">Ranchi Tourism</h2>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Heritage.html">Heritage</a>
+            <a href="Hotel.html">Hotel Booking</a>
+            <a href="Gallery.html">Gallery</a>
+            
+        </nav>
+    </footer>
+</body>
+
+</html>
